@@ -1,0 +1,52 @@
+<!-- * You'll create a trivia form with multiple choice or true/false options (your choice).
+
+* The player will have a limited amount of time to finish the quiz. 
+
+  * The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+
+* Don't let the player pick more than one answer per question.
+
+* Don't forget to include a countdown timer. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Soccer Trivia Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+	<link href="assets/css/reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<img src= 'assets/images/football header.jpg' alt = 'headerImg' width = '100%'>
+	</header>
+
+	<div class = 'container'>
+		
+		<button class = 'btn btn-primary' id = 'startBtn'>Start</button>
+			<!-- Question page -->
+			<div id = timeLeft></div> 
+			<div id = currentQuestion></div> 
+			<div class = 'question'></div>
+			<div class = 'answerList'></div>
+		
+			<!-- Answer Page -->
+			<div id = message></div>
+			<div id = correctedAnswer></div>
+	
+		
+			<!-- Scoreboard -->
+			<div id = finalMessage></div>
+			<div id = correctAnswers></div>
+			<div id = incorrectAnswers></div>
+			<div id = unanswered></div>
+			<div id = 'startOverBtn'></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type = "text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
+
